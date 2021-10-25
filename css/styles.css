@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Regular'), local('Poppins-Regular'),
+        url('/fonts/Poppins-Regular.woff2') format('woff2'),
+        url('/fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Medium'), local('Poppins-Medium'),
+        url('/fonts/Poppins-Medium.woff2') format('woff2'),
+        url('/fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
+        url('/fonts/Poppins-Medium.woff2') format('woff2'),
+        url('/fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46,45,79);
+    width: 100%;
+    height: 100vh;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    /* margin: 20px; */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(252,100,142);
+}
+body::after {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    right: 90px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 400px;
+    height: 670px;
+    background-color: rgba(225, 225, 225, .15);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 0.8rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.container_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 60px; */
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 1.4rem;
+    /* border: rgba(117, 114, 211, 0.726) 1px solid; */
+}
+
+.music_cover {
+    width: 300px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 16px;
+    margin: 10px;
+    /* position: relative; */
+}
+
+#cover {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.music_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+}
+
+#audio {
+    display: none;
+}
+
+.artist_info {
+    display: block;
+}
+.music_title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.artist {
+    font-size: .785em;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.fa-pause, .fa-play {
+    font-size: 1.2em;
+    margin: 0.67rem;
+}
+
+.music_controls_container {
+    width: 100%;
+    /* height: 100%; */
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress_container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+}
+
+.progress_bar {
+    background-color: #232245;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.progress_time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margiN: 9px 0;
+    font-size: 0.789em;
+    font-weight: medium;
+    width: 100%;
+}
+
+.music_controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    /* border: rgba(117, 114, 211, 0.726) 1px solid; */
+}
+
+.audio_controls, .repeat_btn, .shuffle_btn {
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.audio_controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.player_toggle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #232245;
+    background-color: rgba(225, 225, 225, .15);
+    backdrop-filter: blur(15px);
+}

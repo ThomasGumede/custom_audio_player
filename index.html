@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Audio Player</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- <link rel="stylesheet" href="/css/boxicons.css"> -->
+    <link rel="stylesheet" href="/css/all.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_nav">
+        <i class="fas icon fa-chevron-down list"></i>
+        <p class="audio_title"></p>
+        <i class="far icon fa-heart love"></i>
+      </div>
+      <div class="music_cover">
+          <img src="/imgs/hey.jpg" alt="" id='cover'>
+      </div>
+      <audio src="" id="audio"></audio>
+
+      <div class="music_info">
+          <div class="artist_info">
+              <p class="music_title audio_title" id='title'></p>
+              <p class="artist" id='artist'></p>
+          </div>
+          <i class="far font fa-heart love"></i>
+
+      </div>
+
+      <div class="music_controls_container">
+        <div class="progress_container" id='progress_container'>
+          <div class="progress_bar" id='progress_bar'></div>
+        </div>
+        <div class="progress_time">
+            <p class='duration'></p>
+            <p class='currTime'></p>
+        </div>
+        <div class="music_controls">
+          <div class="repeat_btn"  id='repeat'>
+            <i class="fas icon fa-retweet"></i>
+          </div>
+          <div class="audio_controls">
+              <div id="prev">
+                <i class="fas icon fa-backward"></i>
+              </div>
+            
+            <div class="player_toggle">
+                <div id="play">
+                    <i class="fas icon fa-play"></i>
+                </div>
+                
+            </div>
+            <div id="next">
+                <i class="fas icon fa-forward"></i>
+            </div>
+            
+          </div>
+          <div class="shuffle_btn">
+            <i class="fas icon fa-share"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
