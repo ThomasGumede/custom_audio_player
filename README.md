@@ -2,7 +2,7 @@
 Custom music player
 
 ## About the project
-This project is about Custom music player
+custom music player developed using Html, css & JavaScripts.
 
 ## Demo image
 <img src="/imgs/demo.png" alt="" id='cover'>
